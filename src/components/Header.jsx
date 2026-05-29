@@ -8,8 +8,8 @@ export default function Header() {
 
   return (
     <div>
-      {longMonth}
-      <h2>Protein Counter</h2>
+      <time className="text-sm">{longMonth}</time>
+      <h2 className="text-2xl font-medium">Protein Counter</h2>
     </div>
   )
 }
