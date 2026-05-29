@@ -1,6 +1,6 @@
 export default function Progress() {
   return (
-    <div className="px-6 py-4 bg-blue-500 rounded-lg text-white">
+    <div className="px-6 py-4 bg-blue-500 rounded-lg text-white mb-4">
       <div className="flex justify-between mb-4">
         <p>Daily goal</p>
         <p>10g/150g</p>
