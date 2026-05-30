@@ -1,6 +1,6 @@
 export default function FoodEntry() {
   return (
-    <div className="px-6 py-4 bg-blue-500 rounded-lg text-white">
+    <div className="px-6 py-4 bg-blue-500 rounded-lg text-white mb-4">
       <p className="uppercase text-sm mb-2">log a food</p>
       <input
         className="w-full block outline outline-solid outline-white p-2 rounded-sm mb-4"
