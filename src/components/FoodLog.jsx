@@ -1,25 +1,51 @@
+import { TrashIcon } from '@heroicons/react/24/outline'
+
 export default function FoodLog() {
   return (
-    <div>
-      <p>Today's Log</p>
+    <div className="px-6 py-4 bg-blue-500 rounded-lg text-white mb-4">
+      <p className="text-sm mb-8">Today's Log</p>
       <ul>
-        <li>
-          <p>Chicken Breast</p>
-          <time>8:32am</time>
-          <p>32g</p>
-          <button>delete</button>
+        <li className="flex justify-between border-b border-white mb-4">
+          <div>
+            <p className="m-0 leading-none text-lg font-semibold">
+              Chicken Breast
+            </p>
+            <time className="text-xs leading-none">8:32am</time>
+          </div>
+          <div className="text-center">
+            <p className="text-md">32g</p>
+            <button>
+              <TrashIcon className="w-5 h-5 stroke-red-500" />
+            </button>
+          </div>
         </li>
-        <li>
-          <p>Greek yogurt</p>
-          <time>10:15am</time>
-          <p>17g</p>
-          <button>delete</button>
+        <li className="flex justify-between border-b border-white mb-4">
+          <div>
+            <p className="m-0 leading-none text-lg font-semibold">
+              Greek yogurt
+            </p>
+            <time className="text-xs">10:15am</time>
+          </div>
+          <div className="text-center">
+            <p className="text-md">17g</p>
+            <button>
+              <TrashIcon className="w-5 h-5 stroke-red-500" />
+            </button>
+          </div>
         </li>
-        <li>
-          <p>Protein shake</p>
-          <time>1:04pm</time>
-          <p>38g</p>
-          <button>delete</button>
+        <li className="flex justify-between">
+          <div>
+            <p className="m-0 leading-none text-lg font-semibold">
+              Protein shake
+            </p>
+            <time className="text-xs">1:04pm</time>
+          </div>
+          <div className="text-center">
+            <p className="text-md">38g</p>
+            <button>
+              <TrashIcon className="w-5 h-5 stroke-red-500" />
+            </button>
+          </div>
         </li>
       </ul>
     </div>
